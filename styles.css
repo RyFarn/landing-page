@@ -1,0 +1,44 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    color: #F9FAF8;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 100px 100px 100px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navs {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+}
+
+.header-container {
+    display: flex;
+    gap: 20px;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: #F9FAF8;
+
+}
+
+.hero, footer {
+    background-color: #1F2937;
+}
