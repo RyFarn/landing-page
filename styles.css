@@ -3,11 +3,11 @@ body {
     box-sizing: border-box;
 }
 
-/*-------- HEADING --------*/
-
-.hero > * {
-    border: solid 2px red;
+.hero, .first, .second, .third {
+    height: 400px;
 }
+
+/*-------- HEADING --------*/
 
 .hero {
     display: flex;
@@ -36,11 +36,16 @@ body {
 
 .header-container {
     display: flex;
-    margin-top: 50px;
+    margin-top: 80px;
     gap: 40px;
     justify-content: space-between;
     align-items: flex-start;
     height: 200px;
+}
+
+.header-container > img {
+    width: auto;
+    height: 100%;
 }
 
 .massive {
@@ -48,11 +53,6 @@ body {
     font-weight: 900;
     padding: 0;
     margin: 0;
-}
-
-.header-container > img {
-    width: auto;
-    height: 100%;
 }
 
 .header-info {
@@ -78,7 +78,7 @@ a {
     height: 40px;
     width: 120px;
     background-color: #3882F6;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .header-info > p {
@@ -89,29 +89,50 @@ a {
 
 /*-------- MAIN --------*/
 
+.first, .second, .third, .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second, .third, .bottom {
+    justify-content: center;
+}
+
 /* FIRST */
 
-.main-container
-
 h2 {
-    text-align: center;
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
+    margin: 40px 0;
 }
 
-.hero, .first, .second, .third {
-    height: 400px;
+.first-container {
+    display: flex;
+    gap: 40px;
 }
+
+.box {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.box > img {
+    width: 100%;
+    height: auto;
+    border: solid 2px black;
+    border-radius: 10%;
+}
+
 
 /* SECOND */
 
 .second {
     background-color: #E5E7EB;
     padding: 40px 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .second > p {
@@ -119,8 +140,6 @@ h2 {
     font-style: italic;
     font-weight: 100;
     color: #1F2937;
-    margin: 0;
-    padding: 0;
 }
 
 .second > span {
