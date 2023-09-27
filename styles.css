@@ -5,11 +5,15 @@ body {
 
 /*-------- HEADING --------*/
 
+.hero > * {
+    border: solid 2px red;
+}
+
 .hero {
     display: flex;
     flex-direction: column;
-    padding: 5px 100px 100px 100px;
     color: #F9FAF8;
+    padding: 15px 12%;
 }
 
 .top {
@@ -26,6 +30,8 @@ body {
     display: flex;
     list-style: none;
     gap: 16px;
+    padding: 0;
+    margin: 0;
 }
 
 .header-container {
@@ -33,7 +39,8 @@ body {
     margin-top: 50px;
     gap: 40px;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    height: 200px;
 }
 
 .massive {
@@ -44,19 +51,21 @@ body {
 }
 
 .header-container > img {
-    width: 50%;
+    width: auto;
+    height: 100%;
 }
 
 .header-info {
     display: flex;
     flex-direction: column;
     flex-basis: 50%;
+    padding: 0;
+    margin: 0;
 }
 
 a {
     text-decoration: none;
     color: #F9FAF8;
-
 }
 
 .hero, footer {
@@ -72,15 +81,50 @@ a {
     border-radius: 10px;
 }
 
+.header-info > p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
 
 /*-------- MAIN --------*/
 
-.main-container {
-    text-align: center;
-}
+/* FIRST */
+
+.main-container
 
 h2 {
+    text-align: center;
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
+}
+
+.hero, .first, .second, .third {
+    height: 400px;
+}
+
+/* SECOND */
+
+.second {
+    background-color: #E5E7EB;
+    padding: 40px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.second > p {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+    color: #1F2937;
+    margin: 0;
+    padding: 0;
+}
+
+.second > span {
+    align-self: flex-end;
+    margin-right: 50px;
+    font-weight: bold;
 }
