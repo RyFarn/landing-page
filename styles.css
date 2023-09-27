@@ -151,22 +151,29 @@ h2 {
 
 /*-------- THIRD --------*/
 
-.action-info > * {
-    padding: 0;
-    margin: 0;
-}
 
 .action-info {
     display: flex;
-    justify-content: space-between;
     gap: 50px;
     color: #F9FAF8;
     background-color: #3882F6;
-    padding: 20px 70px;
+    padding: 10px 70px;
+    border-radius: 5px;
 }
 
 .action-info > button {
-    padding: 20px;
+    height: 30px;
+    width: 80px;
+    align-self: center;
+    background-color: transparent;
+    color: #F9FAF8;
+    border: solid 2px #F9FAF8;
+    border-radius: 5px
+}
+
+.mini > p {
+    font-size: 15px;
+    font-weight: 300;
 }
 
 
