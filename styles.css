@@ -1,13 +1,15 @@
 body {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
-    color: #F9FAF8;
 }
+
+/*-------- HEADING --------*/
 
 .hero {
     display: flex;
     flex-direction: column;
     padding: 5px 100px 100px 100px;
+    color: #F9FAF8;
 }
 
 .top {
@@ -61,11 +63,24 @@ a {
     background-color: #1F2937;
 }
 
-button {
+.header-info > button {
     font-size: 18px;
     color: #F9FAF8;
     height: 40px;
     width: 120px;
     background-color: #3882F6;
     border-radius: 10px;
+}
+
+
+/*-------- MAIN --------*/
+
+.main-container {
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
 }
