@@ -99,13 +99,13 @@ a {
     justify-content: center;
 }
 
-/* FIRST */
+/*-------- FIRST --------*/
 
 h2 {
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
-    margin: 40px 0;
+    margin: 50px 0;
 }
 
 .first-container {
@@ -125,10 +125,11 @@ h2 {
     height: auto;
     border: solid 2px black;
     border-radius: 10%;
+    margin-bottom: 10px;
 }
 
 
-/* SECOND */
+/*-------- SECOND --------*/
 
 .second {
     background-color: #E5E7EB;
@@ -146,4 +147,34 @@ h2 {
     align-self: flex-end;
     margin-right: 50px;
     font-weight: bold;
+}
+
+/*-------- THIRD --------*/
+
+.action-info > * {
+    padding: 0;
+    margin: 0;
+}
+
+.action-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    color: #F9FAF8;
+    background-color: #3882F6;
+    padding: 20px 70px;
+}
+
+.action-info > button {
+    padding: 20px;
+}
+
+
+/*-------- FOOTER --------*/
+
+
+.bottom {
+    height: 100px;
+    background-color: #1F2937;
+    color: #E5E7EB;
 }
